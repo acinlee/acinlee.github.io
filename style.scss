@@ -241,6 +241,12 @@ nav {
 // .main
 //
 
+#main {
+  height: auto;
+  min-height: 100%;
+  padding-bottom: 90px;
+}
+
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
