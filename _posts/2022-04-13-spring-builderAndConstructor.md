@@ -1,6 +1,6 @@
 ---
 layout: post
-title: @Builder 사용시 @NoArgsConstructor 와 @AllArgsConstructor 함께 사용하는 이유
+title: Builder 어노테이션 사용시 @NoArgsConstructor 와 @AllArgsConstructor 함께 사용하는 이유
 ---
 ### 생성자 생성 기본 개념
 @Builder, @NoArgsConstructor, @AllArgsConstructor 들을 논하기 전에 객체 생성에 대해 먼저 알아 본다.   
