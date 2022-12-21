@@ -10,8 +10,8 @@ title: HTTP 학습 - Http 상태 코드
   + 새로고침은 다시 요청이므로 중복 주문이 될 수 있다.
 
 ## PRG 적용 안한 경우
-![PRG NOT](../images/PRG1.png "PRG NOT")
+![PRG NOT]({{site.baseurl}}/assets/img/PRG1.png "PRG NOT")
 
 
 ## PRG 적용한 경우
-![PRG](../images/PRG2.png "PRG")
+![PRG]({{site.baseurl}}/assets/img/PRG2.png "PRG")
