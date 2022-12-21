@@ -15,6 +15,8 @@ tags: [JUnit]
 2. TDD 정의
 3. JUnit이란?
 4. JUnit 모듈
+5. JUnit Life Cycle
+6. JUnit Annotation
 
 ### 테스트 코드를 작성하는 목적?
 - 코드의 안정성 증진
@@ -51,6 +53,26 @@ tags: [JUnit]
 4. 모듈 이미지
 
 ![Macbook]({{site.baseurl}}/assets/img/JUnit모듈.png)
+
+### JUnit Life Cycle
+| Annotation | Description                              |
+|:----------:|:-----------------------------------------|
+|   @Test    | 테스트용 메소드를 표현하는 어노테이션                     |
+| @BeforEach | 각 테스트 메소드가 시작되기 전에 실행되어야 하는 메소드를 표현      |
+| @AfterEach | 각 테스트 메소드가 시작된 후 실행되어야 하는 메소드를 표현        |
+| @BeforeAll | 테스트 시작 전에 실행되어야 하는 메소드를 표현(static 처리 필요) |
+| @AfterAll  | 테스트 종료 후에 실행되어야 하는 메소드를 표현(static 처리 필요) |
+
+### JUnit Annotation
+1. @SpringBootTest
+   - 통합 테스트 용도로 사용
+   - @SpringBootApplication을 찾아 하위의 모든 Bean을 스캔하여 로드함
+   - 모든 Bean을 스캔하여 로드 한 후 Test용 Application Context를 만들어 Bean을 추가하고, MockBean을 찾아 교체
+2. @ExtendWith
+   - JUnit4에서 @RunWith로 사용되던 어노테이션이 @ExtendWith로 변경됨
+   - 메인으로 실행될 Class 지정 가능
+   - @SpringBootTest에는 기본적으로 @ExtendWith가 추가되어 있음
+
 
 
 
