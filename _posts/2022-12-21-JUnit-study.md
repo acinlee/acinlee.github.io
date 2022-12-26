@@ -52,9 +52,10 @@ tags: [JUnit]
    - 기존 JUnit 3,4 버전으로 작성된 테스트 코드 실행할 때 사용됨
 4. 모듈 이미지
 
-![Macbook]({{site.baseurl}}/assets/img/JUnit모듈.png)
+![JUnitModule]({{site.baseurl}}/assets/img/JUnit모듈.png)
 
 ### JUnit Life Cycle
+
 | Annotation | Description                              |
 |:----------:|:-----------------------------------------|
 |   @Test    | 테스트용 메소드를 표현하는 어노테이션                     |
@@ -62,7 +63,7 @@ tags: [JUnit]
 | @AfterEach | 각 테스트 메소드가 시작된 후 실행되어야 하는 메소드를 표현        |
 | @BeforeAll | 테스트 시작 전에 실행되어야 하는 메소드를 표현(static 처리 필요) |
 | @AfterAll  | 테스트 종료 후에 실행되어야 하는 메소드를 표현(static 처리 필요) |
-
+  
 ### JUnit Annotation
 1. @SpringBootTest
    - 통합 테스트 용도로 사용
